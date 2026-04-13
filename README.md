@@ -119,7 +119,7 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 
 #### Figure 1 - All Datasets with Supply-Push Shading (1960-2025)
 
-![Figure 1: Four-panel time series of all datasets](rq1_fig1_overview.png)
+![Figure 1](Scripts/rq1_fig1_overview.png)
 
 *Figure 1 | Four-panel time series of all four datasets on a shared time axis from 1960 to 2025. The red shaded bands mark Supply-Push regimes, meaning months where both housing starts and manufacturing output were falling at the same time. You can see those bands line up pretty clearly with known economic stress periods like the 1970s stagflation, the 2008 financial crisis, and the 2020 COVID shock, which is a good sign the regime classifier is actually picking up real events.*
 
@@ -127,7 +127,7 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 
 #### Figure 2 - Plywood Signal Decomposed by Economic Regime
 
-![Figure 2: Scatter triptych coloured by regime](rq1_fig2_decomposition.png)
+![Figure 2](Scripts/rq1_fig2_decomposition.png)
 
 *Figure 2 | Three scatter plots where each dot is one month from 1960 to 2025, colored by regime. Blue circles are Demand-Pull months, red squares are Supply-Push months, and grey triangles are Neutral. LEFT: Plywood YoY vs Housing Starts YoY, there is a clear positive relationship (r = 0.296, p < 0.001), which confirms that plywood prices really do track construction demand. The blue dots cluster in the upper right and the red dots cluster in the lower left, which is exactly what you would expect. CENTRE: Plywood YoY vs Manufacturing Output YoY, also a significant positive relationship (r = 0.269, p < 0.001), showing plywood tends to move with the broader industrial cycle. RIGHT: Plywood YoY vs S&P 500 3-month forward return, basically no relationship overall (r = -0.009, p = 0.792), but the colors suggest the regime does matter even if the overall correlation does not show it.*
 
@@ -135,7 +135,7 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 
 #### Figure 3 - OLS Regression Stratified by Regime
 
-![Figure 3: OLS per regime](rq1_fig3_regime_ols.png)
+![Figure 3](Scripts/rq1_fig3_regime_ols.png)
 
 *Figure 3 | OLS regression of plywood YoY change on S&P 500 3-month forward return, run separately for each regime. Each dot is one month and the black line is the regression fit. The r, p-value, and sample size are shown in the legend for each panel. The main thing to notice is that the slope is negative in the Demand-Pull panel and positive in the Supply-Push panel, meaning the direction of the relationship actually flips depending on the regime.*
 
@@ -161,7 +161,7 @@ Plywood prices can be noisy because of things specific to the lumber market like
 
 #### Figure 4 - Rolling Correlation: CCI vs Plywood Alone
 
-![Figure 4: Rolling correlation comparison](rq2_fig4_cci_vs_plywood.png)
+![Figure 4](Scripts/rq2_fig4_cci_vs_plywood.png)
 
 *Figure 4 | TOP: 36-month rolling Pearson r of plywood alone (solid red) and the CCI composite (purple dashed) against the S&P 500 year-over-year return across the full sample. Purple shading means the CCI had a stronger absolute correlation that month, red shading means plywood alone was stronger. BOTTOM: Both series on a common z-score scale to show how similar they actually are. The two lines track each other very closely for most of the sample, with the main exception being the 2020-2022 period when plywood spiked way more than steel did.*
 
