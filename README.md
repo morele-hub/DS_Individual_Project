@@ -163,7 +163,7 @@ None of the slopes are statistically significant (all p-values well above 0.05),
 
 ### Does combining plywood and steel prices into a Construction Cost Index improve predictions over plywood alone?
 
-Plywood prices can be noisy because of things specific to the lumber market like mill fires, Canadian tariffs, or log supply issues. Steel comes from a completely different supply chain, blast furnaces, scrap metal, global trade, so I thought combining them might smooth out some of that commodity-specific noise and give a more stable signal. The question is whether adding steel actually helps or if plywood already captures everything useful on its own.
+Plywood prices can be noisy because of things specific to the lumber market like mill fires or log supply issues. Steel comes from a completely different supply chain, blast furnaces, scrap metal, global trade, so I thought combining them might smooth out some of that commodity-specific noise and give a more stable signal. The question is whether adding steel actually helps or if plywood already captures everything useful on its own.
 
 ---
 
