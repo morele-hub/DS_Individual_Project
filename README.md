@@ -113,6 +113,8 @@ Here is how the 789 months split across regimes:
 
 ### How does the plywood price-S&P 500 relationship reflect housing market health vs. manufacturing and supply chain conditions?
 
+> **Finding:** The relationship does change by regime — the slope flips from negative in Demand-Pull periods to positive in Supply-Push periods — but neither effect is statistically significant on its own. The regime breakdown explains why the overall correlation looks flat when all months are pooled together.
+
 The motivation here is pretty straightforward. A plywood price spike in 2005 was because the housing market was booming and builders needed a ton of lumber. The spike in 2021 was because sawmills shut down during COVID and supply chains fell apart. These are totally different situations but if you just look at the WPU083 number they look the same. I wanted to see if splitting by regime would reveal that the relationship between plywood and the stock market actually changes depending on which situation we are in.
 
 ---
@@ -154,6 +156,8 @@ None of the slopes are statistically significant (all p-values well above 0.05),
 ## Research Question 2
 
 ### Does combining plywood and steel prices into a Construction Cost Index improve predictions over plywood alone?
+
+> **Finding:** No. The CCI and plywood alone perform almost identically (mean rolling r of 0.4239 vs 0.4230), and the CCI is only stronger in 51.7% of months — essentially a coin flip. The simpler model using just WPU083 is good enough.
 
 Plywood prices can be noisy because of things specific to the lumber market like mill fires, Canadian tariffs, or log supply issues. Steel comes from a completely different supply chain, blast furnaces, scrap metal, global trade, so I thought combining them might smooth out some of that commodity-specific noise and give a more stable signal. The question is whether adding steel actually helps or if plywood already captures everything useful on its own.
 
