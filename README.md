@@ -119,6 +119,8 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 
 #### Figure 1 - All Datasets with Supply-Push Shading (1960-2025)
 
+![Figure 1](Scripts/rq1_fig1_overview.png)
+
 - Four-panel time series of all four datasets on a shared time axis from 1960 to 2025.
 - Red shaded bands mark Supply-Push regimes — months where both housing starts and manufacturing output were falling simultaneously.
 - The bands align clearly with known economic stress periods: the 1970s stagflation, the 2008 financial crisis, and the 2020 COVID shock.
@@ -128,6 +130,8 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 
 #### Figure 2 - Plywood Signal Decomposed by Economic Regime
 
+![Figure 2](Scripts/rq1_fig2_decomposition.png)
+
 - Three scatter plots where each dot is one month from 1960 to 2025, colored by regime: blue circles (Demand-Pull), red squares (Supply-Push), and grey triangles (Neutral).
 - **Left panel:** Plywood YoY vs Housing Starts YoY — clear positive relationship (r = 0.296, p < 0.001), confirming that plywood prices track construction demand. Blue dots cluster upper-right, red dots cluster lower-left, as expected.
 - **Centre panel:** Plywood YoY vs Manufacturing Output YoY — also a significant positive relationship (r = 0.269, p < 0.001), showing plywood tends to move with the broader industrial cycle.
@@ -136,6 +140,8 @@ The motivation here is pretty straightforward. A plywood price spike in 2005 was
 ---
 
 #### Figure 3 - OLS Regression Stratified by Regime
+
+![Figure 3](Scripts/rq1_fig3_regime_ols.png)
 
 - OLS regression of plywood YoY change on S&P 500 3-month forward return, run separately for each regime.
 - Each dot is one month; the black line is the regression fit; r, p-value, and sample size are shown in each panel's legend.
@@ -162,6 +168,8 @@ Plywood prices can be noisy because of things specific to the lumber market like
 ---
 
 #### Figure 4 - Rolling Correlation: CCI vs Plywood Alone
+
+![Figure 4](Scripts/rq2_fig4_cci_vs_plywood.png)
 
 - Two-panel figure comparing the 36-month rolling Pearson r of plywood alone (solid red) and the CCI composite (purple dashed) against the S&P 500 year-over-year return.
 - **Top panel:** Purple shading indicates months where CCI had a stronger absolute correlation; red shading indicates months where plywood alone was stronger.
